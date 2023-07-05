@@ -1,0 +1,54 @@
+*{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+.logo{
+  font-size: 2rem;
+  text-transform: uppercase; 
+  border:1px solid red;
+  padding: 10px;
+  background-color: #2badb6;
+}
+.logo:hover{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0;
+}
+.nav{
+    display:flex;
+    gap:150px;
+    font-size: 1.25rem;
+}
+.chil1, .chil2, .chil3{
+    border: 1px solid red;
+    padding:15px;
+    border-radius: 20px;
+    background-color: #b9c41ca6;
+}
+.chil1:hover, .chil2:hover, .chil3:hover{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0;
+}
+.content{
+    display: flex;
+}
+.ad{
+    padding: 30px;
+    font-size:32px;
+}
+.resimler{
+    display: flex;
+    justify-content: space-around;
+    color:#2d00f8;
+    margin-bottom: 2rem;
+}
+body{
+    background-color: rgba(255, 187, 0, 0.37);
+}
+.resim1, .resim2, .resim3{
+    border: 3px inset rgb(94, 116, 1);
+    background-color: #afac01b4;
+}
