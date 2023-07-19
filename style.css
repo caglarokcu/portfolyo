@@ -1,17 +1,62 @@
 *{
+    margin: 0px;
     text-decoration: none;
+}
+.header2{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    background-color: rgb(197, 69, 69); 
+    padding:5px 0px;
+    position: sticky; 
+    top:0px; 
+    z-index: 3;
+    border: 1px solid  rgb(95, 36, 36);
+}
+.logo2{
+    font-size: 1rem;
+    text-transform: uppercase; 
+    align-self: center;
+}
+.logo2:hover{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0;
+}
+.nav2{
+    display:flex;
+    gap:150px;
+    font-size: 1.25rem;
+}
+.chil11, .chil12, .chil13{
+    font-size: 1rem;
+    text-transform: uppercase; 
+    align-self: center;
+}
+.chil11:hover, .chil12:hover, .chil13:hover{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0;
 }
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    margin: 0px;
+    background-color: brown;
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right:0px;
 }
 .logo{
+  text-align: center;
   font-size: 2rem;
   text-transform: uppercase; 
   border:1px solid red;
   padding: 10px;
   background-color: #2badb6;
+}
+.logoicon{
+    flex-grow:1;
 }
 .logo:hover{
     background-color: #fff;
@@ -22,22 +67,38 @@
     gap:150px;
     font-size: 1.25rem;
 }
+hr{
+    display: none;
+}
 .chil1, .chil2, .chil3{
     border: 1px solid red;
     padding:15px;
     border-radius: 20px;
     background-color: #b9c41ca6;
+    display:flex;
+    align-items: center;
 }
 .chil1:hover, .chil2:hover, .chil3:hover{
     background-color: #fff;
     box-shadow: 0 0 5px 0;
 }
+.logo1, .logo22, .logo3{
+    margin-right: 5px;
+}
 .content{
     display: flex;
+    justify-content: space-evenly;
+}
+.isim{
+    margin-top:100px;              /*Burda margin auto neden olmuyor ?, width belli değil mi ? ada ekledim o da olmadı buna bir bak.*/
+}
+.content img{
+    margin:50px; 
 }
 .ad{
     padding: 30px;
     font-size:32px;
+    margin:auto;
 }
 .resimler{
     display: flex;
@@ -48,7 +109,76 @@
 body{
     background-color: rgba(255, 187, 0, 0.37);
 }
-.resim1, .resim2, .resim3{
+.yetenekResim{
     border: 3px inset rgb(94, 116, 1);
     background-color: #afac01b4;
+}
+@media all and (max-width:900px){
+    .header{
+        display:flex;
+        justify-content: stretch;
+        align-self: center;
+    }
+    .resimler{
+        display: grid;
+        justify-content: space-around;
+        color:#2d00f8;
+        margin-bottom: 2rem;
+        }
+        .yetenekResim{
+            margin: 10px;
+            border: 1px solid red;
+        }
+    .logo{
+        flex-grow: 1;
+        background-color: blue;
+        font-size: 1.5rem;
+    }
+    .nav{
+        font-size: 1rem;
+        justify-content: space-around;
+        gap:0px;
+        flex-grow: 3;
+        background-color:chocolate;
+    }
+    .chil1, .chil2, .chil3{
+        border: 1px solid red;
+        border-radius: 20px;
+        background-color: #b9c41ca6;
+        padding:none;
+        margin:none;
+    }
+    .content{
+        flex-direction: column;
+        margin-top:0px;
+    }
+    .ad{
+        margin:20px auto;
+        width: 300px;
+    }
+    
+}
+@media all and (max-width:600px){
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 10px 100px;
+        border-radius: 25px;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0px;
+        gap:15px;
+    }
+    .nav hr{
+        display:block;
+        align-self: stretch;
+        color: #2d00f8;   /*Bu color neden hr ye işlemiyor acaba ?*/
+    }
+    .content{
+        margin-top:300px;
+    }
+    
 }
